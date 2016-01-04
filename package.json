@@ -1,0 +1,24 @@
+{
+  "name": "@mordent/pokename",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mordentware/pokename.git"
+  },
+  "author": "Matthew Gardner <contact@mordentware.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mordentware/pokename/issues"
+  },
+  "homepage": "https://github.com/Mordentware/pokename",
+  "private": true,
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "run-sequence": "^1.1.5"
+  }
+}
