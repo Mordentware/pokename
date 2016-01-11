@@ -1,18 +1,22 @@
 module.exports = {
-	directories: {
-		build: 'build/',  // if changed, also update ../tasks.js
-		source: 'src/',
-		target: 'dist/'   // if changed, also update ../../.gitignore
-	},
-	scripts: {
-		build: {
+	build: {
+		root: 'build/',
+		tasks: {
+			root: 'tasks/',
 			files: '**/*.js'
-		},
-		source: {
-			files: 'scripts/**/*.js'
-		},
-		target: {
-			directory: 'scripts/'
+		}
+	},
+	source: {
+		root: 'src/',
+		scripts: {
+			root: 'scripts/',
+			files: '**/*.js'
+		}
+	},
+	target: {
+		root: 'dist/',
+		scripts: {
+			root: 'scripts/'
 		}
 	}
 };

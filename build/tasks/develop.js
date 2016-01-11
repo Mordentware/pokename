@@ -1,5 +1,5 @@
 var runSequence = require('run-sequence');
 
 module.exports = function (callback) {
-	runSequence('lint:build', 'lint:source:scripts', callback);
+	runSequence('clean', 'lint', 'build', callback);
 };
