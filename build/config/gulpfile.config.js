@@ -9,11 +9,10 @@ module.exports = {
 			files: '**/*.js'
 		},
 		source: {
-			files: '**/*.js',
-			rootFile: 'root.js'
+			files: 'scripts/**/*.js'
 		},
 		target: {
-			rootFile: 'pokename.js'
+			directory: 'scripts/'
 		}
 	}
 };
