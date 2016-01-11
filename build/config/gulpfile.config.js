@@ -1,6 +1,7 @@
 module.exports = {
 	build: {
 		root: 'build/',
+		files: '**/*.js',
 		tasks: {
 			root: 'tasks/',
 			files: '**/*.js'

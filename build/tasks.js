@@ -1,6 +1,6 @@
 var config = require('./config/gulpfile.config.js');
 var fs = require('fs');
-var gulp  = require('gulp');
+var gulp = require('gulp');
 var scriptFilter = require('./util/script-filter.js');
 
 // Synchronous, as tasks must be defined by end of script execution.
