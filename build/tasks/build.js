@@ -1,3 +1,5 @@
+var runSequence = require('run-sequence');
+
 module.exports = function (callback) {
-	callback();
+	runSequence('build:scripts', 'build:styles', 'build:templates', callback);
 };

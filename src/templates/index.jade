@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		meta(charset="utf8")
+		title= PokéName
+		meta(
+			name="description"
+			content="PokéName - The Pokémon-themed version name generator"
+		)
+		link(
+			rel="stylesheet"
+			href="#{stylesheet}"
+		)
+		script(
+			src="#{requireJs}"
+			data-main="#{mainScript}"
+		)
+	body#pokename-app

@@ -12,12 +12,23 @@ module.exports = {
 		scripts: {
 			root: 'scripts/',
 			files: '**/*.js'
+		},
+		templates: {
+			root: 'templates/',
+			indexFile: 'index.jade',
+			components: {
+				root: 'components/',
+				files: '**/*.jade'
+			}
 		}
 	},
 	target: {
 		root: 'dist/',
 		scripts: {
 			root: 'scripts/'
+		},
+		templates: {
+			root: 'templates/'
 		}
 	}
 };
