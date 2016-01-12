@@ -29,6 +29,9 @@ module.exports = {
 		},
 		templates: {
 			root: 'templates/'
+		},
+		vendor: {
+			root: 'vendor/'
 		}
 	}
 };

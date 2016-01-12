@@ -1,0 +1,16 @@
+{
+  "name": "@mordent/pokename",
+  "description": "",
+  "authors": [
+    "Matthew Gardner <contact@mordentware.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Mordentware/pokename",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.22"
+  }
+}
