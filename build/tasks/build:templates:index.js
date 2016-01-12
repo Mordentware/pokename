@@ -8,7 +8,7 @@ module.exports = function () {
 			locals: {
 				mainScript: '',
 				requireJs: '',
-				stylesheet: ''
+				stylesheet: config.target.styles.indexFile
 			}
 		}))
 		.pipe(gulp.dest(config.target.root));
