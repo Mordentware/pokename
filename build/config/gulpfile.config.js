@@ -13,6 +13,10 @@ module.exports = {
 			root: 'scripts/',
 			files: '**/*.js'
 		},
+		styles: {
+			root: 'styles/',
+			files: '**/*.scss'
+		},
 		templates: {
 			root: 'templates/',
 			indexFile: 'index.jade',
@@ -26,6 +30,9 @@ module.exports = {
 		root: 'dist/',
 		scripts: {
 			root: 'scripts/'
+		},
+		styles: {
+			indexFile: 'app.css'
 		},
 		templates: {
 			root: 'templates/'
