@@ -1,0 +1,9 @@
+.NameItem > i[name="remove"] {
+	padding-left: 1em;
+	padding-right: 1em;
+
+	&:hover {
+		color: $colourTheme;
+		cursor: pointer;
+	}
+}
