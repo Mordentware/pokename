@@ -2,7 +2,9 @@
 
 A small showcase application, meant to focus on the programme structure and logic over being featureful.
 
-The technology stack is:
+The application is designed to generate [Ubuntu-style](https://wiki.ubuntu.com/DevelopmentCodeNames) project names, but using [Pokemon](http://pokeapi.co/) instead of animals.
+
+## Technology
 
 * ES5
 * jQuery
