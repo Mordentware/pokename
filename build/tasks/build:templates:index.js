@@ -8,7 +8,7 @@ module.exports = function () {
 			locals: {
 				// source mainFile as structure is maintained between source and target
 				mainScript: config.target.scripts.root + config.source.scripts.mainFile,
-				requireJs: '',
+				requireJs: config.target.vendor.root + 'requirejs/require.js',
 				stylesheet: config.target.styles.indexFile
 			}
 		}))
