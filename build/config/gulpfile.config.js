@@ -11,7 +11,8 @@ module.exports = {
 		root: 'src/',
 		scripts: {
 			root: 'scripts/',
-			files: '**/*.js'
+			files: '**/*.js',
+			mainFile: 'main.js'
 		},
 		styles: {
 			root: 'styles/',

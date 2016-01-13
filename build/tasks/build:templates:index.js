@@ -6,7 +6,8 @@ module.exports = function () {
 	return gulp.src([config.source.root + config.source.templates.root + config.source.templates.indexFile])
 		.pipe(gulpJade({
 			locals: {
-				mainScript: '',
+				// source mainFile as structure is maintained between source and target
+				mainScript: config.target.scripts.root + config.source.scripts.mainFile,
 				requireJs: '',
 				stylesheet: config.target.styles.indexFile
 			}
