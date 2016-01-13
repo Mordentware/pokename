@@ -3,8 +3,9 @@ define([
 	'./word-retriever',
 	'../models/pokemon',
 	'../collections/pokemons',
+	'config',
 	'../../mock/pokedex'
-], function ($, WordRetriever, Pokemon, Pokemons, mockPokedex) {
+], function ($, WordRetriever, Pokemon, Pokemons, config, mockPokedex) {
 
 	var PokemonRetriever = WordRetriever.extend({
 
@@ -19,8 +20,10 @@ define([
 			// load pokedex
 			var self = this;
 			var promise;
-			if (false) {
-				// TODO: request
+			if (!config.mockData) {
+				promise = $.ajax({
+					url: config.pokemonApi.root + config.pokemonApi.pokedex
+				});
 			}
 			else {
 				// use mock data

@@ -1,7 +1,8 @@
 define([
 	'jquery',
-	'./base'
-], function ($, BaseModel) {
+	'./base',
+	'config'
+], function ($, BaseModel, config) {
 
 	var Pokemon = BaseModel.extend({
 
@@ -23,8 +24,18 @@ define([
 				else {
 					if (self.has('uri')) {
 						// request full name
-						if (false) {
-							// TODO: request
+						if (!config.mockData) {
+							$.ajax({
+								url: config.pokemonApi.root + self.get('uri')
+							}).then(function (response) {
+								if (response.name != null) {
+									self.set('fullName', response.name);
+									deferred.resolve(self.get('fullName'));
+								}
+							}, function (response) {
+								// error
+								deferred.reject('Unable to retrieve information from server.');
+							});
 						}
 						else {
 							// mock data

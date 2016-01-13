@@ -1,7 +1,7 @@
 define(function () {
 
 	return {
-		mockData: true,
+		mockData: false,
 		adjectiveApi: {
 			root: 'http://www.whimsicalwordimal.com/',
 			adjective: 'api/adj/'
