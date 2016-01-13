@@ -7,6 +7,9 @@ module.exports = {
 			files: '**/*.js'
 		}
 	},
+	root: {
+		bowerFile: 'bower.json'
+	},
 	source: {
 		root: 'src/',
 		scripts: {
