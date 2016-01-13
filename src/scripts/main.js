@@ -15,8 +15,9 @@ require([
 	'components/controllers/pokemon-retriever',
 	'components/collections/names',
 	'components/views/app',
-	'components/views/name-generator'
-], function (AdjectiveRetriever, PokemonRetriever, Names, AppView, NameGenerator) {
+	'components/views/name-generator',
+	'components/views/name-list'
+], function (AdjectiveRetriever, PokemonRetriever, Names, AppView, NameGenerator, NameList) {
 
 	// create core controllers
 	var adjectiveRetriever = new AdjectiveRetriever();
@@ -30,6 +31,9 @@ require([
 			savedNames: savedNames,
 			adjectiveRetriever: adjectiveRetriever,
 			pokemonRetriever: pokemonRetriever
+		}),
+		savedNamesListView: new NameList({
+			collection: savedNames
 		})
 	});
 	appView.render();

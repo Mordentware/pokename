@@ -1,9 +1,9 @@
 define([
 	'./base',
 	'templates/app',
-//	'./name-list',
+	'./name-list',
 	'./name-generator'
-], function (BaseView, AppTemplate/*, NameList*/, NameGenerator) {
+], function (BaseView, AppTemplate, NameList, NameGenerator) {
 
 	var AppView = BaseView.extend({
 
@@ -17,8 +17,8 @@ define([
 			this.validate('nameGeneratorView', options.nameGeneratorView);
 			this.validate('savedNamesListView', options.savedNamesListView);
 			this.childViews = {
-				nameGeneratorView: options.nameGeneratorView
-				// savedNamesListView: options.savedNamesListView
+				nameGeneratorView: options.nameGeneratorView,
+				savedNamesListView: options.savedNamesListView
 			};
 		},
 
@@ -30,7 +30,9 @@ define([
 					}
 					break;
 				case 'savedNamesListView':
-					// TODO
+					if (!(value instanceof NameList)) {
+						throw new Error(this.className + ' "savedNamesListView" option is not a NameList instance.');
+					}
 					break;
 			}
 		}
