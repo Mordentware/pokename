@@ -10,4 +10,9 @@ require.config({
 
 require([
 	'components/views/app'
-], function (AppView) {});
+], function (AppView) {
+
+	var appView = new AppView();
+	appView.render();
+
+});
