@@ -29,6 +29,10 @@ module.exports = {
 				root: 'components/',
 				files: '**/*.jade'
 			}
+		},
+		vendor: {
+			root: 'vendor/',
+			files: '**/**'
 		}
 	},
 	target: {

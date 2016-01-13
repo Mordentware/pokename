@@ -1,7 +1,11 @@
 {
 	extends: "standard",
+	globals: {
+		define: false
+	},
 	rules: {
-		indent: [2, "tab"],
-		semi: [2, "always"]
+		"indent": [2, "tab", {"SwitchCase": 1}],
+		"padded-blocks": 0,
+		"semi": [2, "always"]
 	}
 }
