@@ -1,0 +1,6 @@
+select(name="selector")
+	for opt in options
+		option(
+			value="#{opt.value}"
+			selected=opt.selected
+		) #{opt.label}

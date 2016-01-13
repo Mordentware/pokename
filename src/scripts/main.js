@@ -10,10 +10,27 @@ require.config({
 });
 
 require([
-	'components/views/app'
-], function (AppView) {
+	'components/controllers/adjective-retriever',
+	'components/controllers/pokemon-retriever',
+	'components/collections/names',
+	'components/views/app',
+	'components/views/name-generator'
+], function (AdjectiveRetriever, PokemonRetriever, Names, AppView, NameGenerator) {
 
-	var appView = new AppView();
+	// create core controllers
+	var adjectiveRetriever = new AdjectiveRetriever();
+	var pokemonRetriever = new PokemonRetriever();
+
+	// create core collections
+	var savedNames = new Names();
+
+	var appView = new AppView({
+		nameGeneratorView: new NameGenerator({
+			savedNames: savedNames,
+			adjectiveRetriever: adjectiveRetriever,
+			pokemonRetriever: pokemonRetriever
+		})
+	});
 	appView.render();
 
 });
