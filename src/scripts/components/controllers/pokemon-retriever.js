@@ -21,6 +21,7 @@ define([
 			var self = this;
 			var promise;
 			if (!config.mockData) {
+				// request
 				promise = $.ajax({
 					url: config.pokemonApi.root + config.pokemonApi.pokedex
 				});
