@@ -20,6 +20,7 @@ module.exports = {
 		},
 		templates: {
 			root: 'templates/',
+			files: '**/*.jade',
 			indexFile: 'index.jade',
 			components: {
 				root: 'components/',

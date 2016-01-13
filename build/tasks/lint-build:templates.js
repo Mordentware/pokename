@@ -1,5 +1,5 @@
 var runSequence = require('run-sequence');
 
 module.exports = function (callback) {
-	runSequence('clean', 'lint', 'build', 'watch', 'serve', callback);
+	runSequence('lint:templates', 'build:templates', callback);
 };
