@@ -1,0 +1,5 @@
+#pokename-app > div {
+	@include border-radius($borderRadiusLarge);
+	padding: $paddingThick;
+	margin: $marginThick;
+}
