@@ -23,9 +23,15 @@ define([
 				else {
 					if (self.has('uri')) {
 						// request full name
-						// TODO
-						self.set('fullName', 'Pikachu');
-						deferred.resolve(self.get('fullName'));
+						if (false) {
+							// TODO: request
+						}
+						else {
+							// mock data
+							var pokedexName = self.get('pokedexName');
+							self.set('fullName', pokedexName.charAt(0).toUpperCase() + pokedexName.slice(1));
+							deferred.resolve(self.get('fullName'));
+						}
 					}
 					else {
 						deferred.reject('No URI available for Pokemon.');
