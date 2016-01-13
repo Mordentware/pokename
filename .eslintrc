@@ -4,6 +4,7 @@
 		define: false
 	},
 	rules: {
+		"brace-style": [2, "stroustrup", { "allowSingleLine": true }],
 		"indent": [2, "tab", {"SwitchCase": 1}],
 		"padded-blocks": 0,
 		"semi": [2, "always"]
