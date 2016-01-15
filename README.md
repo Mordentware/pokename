@@ -1,6 +1,6 @@
 # Pokéname
 
-A small showcase application, meant to focus on the programme structure and logic over being featureful.
+A small showcase application, meant to focus on the programme structure and logic over being featurful.
 
 The application is designed to generate [Ubuntu-style](https://wiki.ubuntu.com/DevelopmentCodeNames) project names, but using [Pokemon](http://pokeapi.co/) instead of animals.
 
@@ -52,6 +52,7 @@ Note that, by default, the actual third-party APIs are used. This can be changed
 ## Further Development
 
 * Change how the environment is defined (e.g. development vs. production). Consider using [dotenv](https://www.npmjs.com/package/dotenv).
+* Add automated testing.
 * Rework the included third-party dependencies to work correctly from Bower (reduces repository size).
 * Consider splitting the mock data into a distinct application which can be accessed as a service instead.
 * Spend more time working on the rather simplistic styling: consider a responsive interface.
