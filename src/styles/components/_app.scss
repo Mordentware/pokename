@@ -1,5 +1,6 @@
-#pokename-app > div {
+#pokename-app > div,
+#pokename-app > header {
 	@include border-radius($borderRadiusLarge);
-	padding: $paddingThick;
+	padding: $paddingMedium;
 	margin: $marginThick;
 }

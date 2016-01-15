@@ -13,10 +13,10 @@ $borderRadiusLarge: 1em;
 
 $fontSizeLarge: 200%;
 
-$marginThick: 2em;
+$marginThick: 32px;
 
-$paddingMedium: 1em;
-$paddingThick: 2em;
+$paddingMedium: 16px;
+$paddingThick: 32px;
 
 // mixins
 // ------
@@ -34,10 +34,7 @@ body {
 	background-color: $colourBackgroundTheme;
 }
 header {
-	margin: $marginThick;
-	padding: $paddingThick;
 	background-color: $colourBackground;
-	@include border-radius($borderRadiusLarge);
 }
 div {
 	background-color: $colourBackground;
